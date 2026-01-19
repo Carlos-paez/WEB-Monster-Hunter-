@@ -1,0 +1,15 @@
+{
+  "name": "web-monster-hunter-",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}
