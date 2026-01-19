@@ -6,7 +6,8 @@
 
     <title>Monstr Hunter Info</title>
 
-    <link href="/../styles/style.css" rel="stylesheet" />
+    <link href="../styles/style.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body>
@@ -17,7 +18,7 @@
         <strong><em> Monster Hunter Info </em></strong>
       </h1>
 
-      <a href="/../index.html" class="link">Inicio</a>
+      <a href="../index.html" class="link">Inicio</a>
     </header>
 
     <br /><br />
@@ -40,37 +41,58 @@
       <p class="texto_pre_img">
         La primera <sup>1ra</sup> generación, cuenta con <sub>2</sub> entregas
       </p>
-      <img src="/../assets/MH.jpg" height="500" width="400" />
+
+      <div data-aos="fade-right"
+           data-aos-offset="300"
+           data-aos-easing="ease-in-sine">
+        <img src="/../assets/MH.jpg" height="500" width="400" />
+      </div>
 
       <br />
       <p class="texto_pre_img">
         La segunda <sup>2da</sup> generación, cuenta con <sub>2</sub> entregas
       </p>
-      <img src="/../assets/Freedom unite.jpg" height="500" width="400" />
+
+      <div data-aos="fade-left">
+        <img src="/../assets/Freedom unite.jpg" height="500" width="400" />
+      </div>
 
       <br />
       <p class="texto_pre_img">
         La tercera <sup>3ra</sup> generación, cuenta con <sub>3</sub> entregas
       </p>
-      <img src="/../assets/MH3U.jpg" height="500" width="400" />
+
+      <div data-aos="fade-up-right">
+        <img src="/../assets/MH3U.jpg" height="500" width="400" />
+      </div>
 
       <br />
       <p class="texto_pre_img">
         La Cuarta <sup>4ta</sup> generación, cuenta con <sub>2</sub> entregas
       </p>
-      <img src="/../assets/MH4U.jpg" height="500" width="400" />
+
+      <div data-aos="fade-up-left">
+        <img src="/../assets/MH4U.jpg" height="500" width="400" />
+      </div>
 
       <br />
       <p class="texto_pre_img">
         La quinta <sup>5ta</sup> generación, cuenta con <sub>2</sub> entregas
       </p>
-      <img src="/../assets/World.jpg" height="500" width="400" />
+
+      <div data-aos="fade-down-right">
+        <img src="/../assets/World.jpg" height="500" width="400" />
+      </div>
 
       <br />
       <p class="texto_pre_img">
         La sexta <sup>6ta</sup> generación, cuenta con <sub>1</sub> entregas
       </p>
-      <img src="/../assets/Wilds.jpg" height="500" width="400" />
+
+      <div data-aos="zoom-in-right">
+        <img src="/../assets/Wilds.jpg" height="500" width="400" />
+      </div>
+
     </div>
 
     <br /><br /><br /><br /><br /><br /><br /><br />
@@ -104,6 +126,11 @@
       <img src="/../assets/Wilds.jpg" />
     </section>
 
-    <br /><br /><br /><br /><br /><br /><br /><br />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
   </body>
 </html>

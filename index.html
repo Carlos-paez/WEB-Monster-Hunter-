@@ -7,9 +7,10 @@
     <title>Monstr Hunter Info</title>
 
     <link href="styles/style.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="body" id="body">
     <audio src="assets/MHFU.mp3" autoplay></audio>
 
     <header class="baner">
@@ -23,7 +24,16 @@
         <em><strong> Monster Hunter </strong></em>
       </h2>
 
-      <img src="assets/rathalos fondo.jpg" />
+      <!-- From Uiverse.io by vinodjangid07 -->
+      <button class="button" id="alerta">
+        <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
+        Explore
+      </button>
+
+
+      <div data-aos="fade-right">
+        <img src="assets/rathalos fondo.jpg" />
+      </div>
 
       <div
         id="cookieConsent"
@@ -63,7 +73,7 @@
         </button>
       </div>
 
-      <p class="texto">
+      <p class="texto" id="text">
         <strong>
           Monster Hunter es una franquicia de videojuegos de rol y acción con
           temática fantástica, desarrollada y publicada por Capcom. La serie
@@ -82,7 +92,9 @@
         que permiten enfrentar desafíos cada vez más difíciles.
       </p>
 
-      <img src="assets/mitsutsune.jpg" />
+      <div data-aos="fade-up" data-aos-anchor-placement="center-center">
+        <img src="assets/mitsutsune.jpg" />
+      </div>
 
       <p class="texto">
         El personaje no evoluciona con atributos propios; en cambio, sus
@@ -103,7 +115,9 @@
         de 10 millones de copias vendidas en pocos meses.
       </p>
 
-      <img src="assets/duramboros wilds.jpg" />
+     <div data-aos="fade-down-left">
+       <img src="assets/duramboros wilds.jpg" />
+     </div>
 
       <p class="texto">
         En resumen, Monster Hunter es una serie de videojuegos de rol y acción
@@ -120,7 +134,8 @@
         >
       </h3>
 
-      <div class="targetas">
+      <div class="targetas" data-aos="fade-up"
+           data-aos-duration="3000">
         <a
           href="views/Generaciones.html"
           target="_self"
@@ -133,21 +148,25 @@
         >
       </div>
 
-      <h4 class="texto">
-        La saga de video juegos Monster Hunter, creada por Capcom en 2004, es
-        una serie de rol de acción donde el jugador asume el rol de un cazador
-        para enfrentar y capturar monstruos gigantes en diversos entornos. El
-        objetivo principal es completar misiones para obtener materiales de los
-        monstruos, que se usan para fabricar armas y armaduras más poderosas,
-        permitiendo al cazador enfrentar desafíos crecientes. Aunque cuenta con
-        un modo de un jugador, la serie es conocida por su cooperativo,
-        permitiendo hasta cuatro jugadores en misiones. A lo largo de sus más de
-        25 juegos, la franquicia ha evolucionado en varias plataformas, desde
-        PlayStation 2 hasta PC y consolas modernas, destacando Monster Hunter:
-        World (2018) por su éxito global y accesibilidad, convirtiéndose en el
-        juego más vendido de Capcom y expandiendo significativamente la base de
-        fans fuera de Japón.
-      </h4>
+      <div data-aos="flip-right">
+
+        <h4 class="texto">
+          La saga de video juegos Monster Hunter, creada por Capcom en 2004, es
+          una serie de rol de acción donde el jugador asume el rol de un cazador
+          para enfrentar y capturar monstruos gigantes en diversos entornos. El
+          objetivo principal es completar misiones para obtener materiales de los
+          monstruos, que se usan para fabricar armas y armaduras más poderosas,
+          permitiendo al cazador enfrentar desafíos crecientes. Aunque cuenta con
+          un modo de un jugador, la serie es conocida por su cooperativo,
+          permitiendo hasta cuatro jugadores en misiones. A lo largo de sus más de
+          25 juegos, la franquicia ha evolucionado en varias plataformas, desde
+          PlayStation 2 hasta PC y consolas modernas, destacando Monster Hunter:
+          World (2018) por su éxito global y accesibilidad, convirtiéndose en el
+          juego más vendido de Capcom y expandiendo significativamente la base de
+          fans fuera de Japón.
+        </h4>
+
+      </div>
 
       <a
         class="targeta"
@@ -173,6 +192,14 @@
           // Aquí puedes cargar scripts de analítica o publicidad si quieres
         });
       });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="Scripts/Darck_Mode.js"></script>
+
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
