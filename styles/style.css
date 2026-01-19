@@ -18,6 +18,7 @@
   font-family: "Times New Roman", Times, serif;
   color: dodgerblue;
   -webkit-text-stroke: 1px black;
+  text-align: center;
 }
 
 .texto {
