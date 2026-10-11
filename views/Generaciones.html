@@ -1,136 +1,154 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="es" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Monstr Hunter Info</title>
+    <title>Generaciones · Monster Hunter Info</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <link href="/../styles/style.css" rel="stylesheet" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
-  <body>
-    <audio src="MHFU.mp3" autoplay></audio>
+  <body class="body" id="body">
+    <audio src="../assets/MHFU.mp3" autoplay loop></audio>
 
-    <header class="baner">
-      <h1>
-        <strong><em> Monster Hunter Info </em></strong>
-      </h1>
-
-      <a href="../index.html" class="link">Inicio</a>
+    <header class="site-header">
+      <a href="../index.html" class="brand">Monster&nbsp;<span>Hunter</span></a>
+      <nav class="nav">
+        <a href="../index.html">Inicio</a>
+        <a href="Generaciones.html">Generaciones</a>
+        <a href="Insigneas.html">Insignias</a>
+      </nav>
     </header>
 
-    <br /><br />
+    <main>
+      <section class="page-head">
+        <h1 class="page-title" data-aos="fade-up">Generaciones</h1>
+        <p class="page-lead" data-aos="fade-up">
+          La saga de videojuegos Monster Hunter cuenta actualmente con 6
+          generaciones de juegos, empezando en 2004 para la PlayStation 2 y
+          continuando hasta la actualidad (2025) con su más reciente entrega,
+          Monster Hunter Wilds.
+        </p>
+      </section>
 
-    <h2 class="titulo">
-      <em><strong> Monster Hunter </strong></em>
-    </h2>
+      <section class="section">
+        <div class="gens">
+          <article class="gen" data-aos="fade-up">
+            <figure class="gen__media">
+              <img src="../assets/MH.jpg" alt="Primera generación" />
+            </figure>
+            <div class="gen__body">
+              <span class="gen__tag">1ª Generación</span>
+              <p>Cuenta con <sub>2</sub> entregas.</p>
+            </div>
+          </article>
 
-    <br /><br />
+          <article class="gen" data-aos="fade-up">
+            <figure class="gen__media">
+              <img src="../assets/Freedom unite.jpg" alt="Segunda generación" />
+            </figure>
+            <div class="gen__body">
+              <span class="gen__tag">2ª Generación</span>
+              <p>Cuenta con <sub>2</sub> entregas.</p>
+            </div>
+          </article>
 
-    <h4 class="texto">
-      La saga de video juegos Monster Hunter, cuenta actualmente con 6
-      generaciones de juegos, empezando en 2004 para la PlayStation 2.
-      Continuando con su producción y distribución de entregas hasta la
-      actualidad (2025) con su más reciente entrega Monster Hunter wilds.
-    </h4>
+          <article class="gen" data-aos="fade-up">
+            <figure class="gen__media">
+              <img src="../assets/MH3U.jpg" alt="Tercera generación" />
+            </figure>
+            <div class="gen__body">
+              <span class="gen__tag">3ª Generación</span>
+              <p>Cuenta con <sub>3</sub> entregas.</p>
+            </div>
+          </article>
 
-    <br /><br />
-    <div class="all">
-      <p class="texto_pre_img">
-        La primera <sup>1ra</sup> generación, cuenta con <sub>2</sub> entregas
-      </p>
+          <article class="gen" data-aos="fade-up">
+            <figure class="gen__media">
+              <img src="../assets/MH4U.jpg" alt="Cuarta generación" />
+            </figure>
+            <div class="gen__body">
+              <span class="gen__tag">4ª Generación</span>
+              <p>Cuenta con <sub>2</sub> entregas.</p>
+            </div>
+          </article>
 
-      <div data-aos="fade-right"
-           data-aos-offset="300"
-           data-aos-easing="ease-in-sine">
-        <img src="/../assets/MH.jpg" height="500" width="400" />
-      </div>
+          <article class="gen" data-aos="fade-up">
+            <figure class="gen__media">
+              <img src="../assets/World.jpg" alt="Quinta generación" />
+            </figure>
+            <div class="gen__body">
+              <span class="gen__tag">5ª Generación</span>
+              <p>Cuenta con <sub>2</sub> entregas.</p>
+            </div>
+          </article>
 
-      <br />
-      <p class="texto_pre_img">
-        La segunda <sup>2da</sup> generación, cuenta con <sub>2</sub> entregas
-      </p>
+          <article class="gen" data-aos="fade-up">
+            <figure class="gen__media">
+              <img src="../assets/Wilds.jpg" alt="Sexta generación" />
+            </figure>
+            <div class="gen__body">
+              <span class="gen__tag">6ª Generación</span>
+              <p>Cuenta con <sub>1</sub> entrega.</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-      <div data-aos="fade-left">
-        <img src="/../assets/Freedom unite.jpg" height="500" width="400" />
-      </div>
+      <section class="section section--cta">
+        <a
+          class="cta"
+          href="https://monsterhunter.fandom.com/es/wiki/Saga_Monster_Hunter"
+          target="_blank"
+          rel="noopener"
+          >Wiki de Monster Hunter</a
+        >
+      </section>
 
-      <br />
-      <p class="texto_pre_img">
-        La tercera <sup>3ra</sup> generación, cuenta con <sub>3</sub> entregas
-      </p>
+      <section class="section">
+        <h2 class="section-title" data-aos="fade-up">
+          Galería de imágenes
+        </h2>
+        <div class="gallery" data-aos="fade-up">
+          <img src="../assets/MH.jpg" alt="Monster Hunter" />
+          <img src="../assets/MH2.jpg" alt="Monster Hunter 2" />
+          <img src="../assets/Freedom.jpg" alt="Freedom" />
+          <img src="../assets/Freedom 2.jpg" alt="Freedom 2" />
+          <img src="../assets/Freedom unite.jpg" alt="Freedom Unite" />
+          <img src="../assets/MH3.jpg" alt="Monster Hunter 3" />
+          <img src="../assets/Portable 3 rd.jpg" alt="Portable 3rd" />
+          <img src="../assets/MH3U.jpg" alt="Monster Hunter 3 Ultimate" />
+          <img src="../assets/MH4U.jpg" alt="Monster Hunter 4 Ultimate" />
+          <img src="../assets/MHGU.jpg" alt="Monster Hunter Generations Ultimate" />
+          <img src="../assets/World.jpg" alt="Monster Hunter World" />
+          <img src="../assets/Rise.jpg" alt="Monster Hunter Rise" />
+          <img src="../assets/Wilds.jpg" alt="Monster Hunter Wilds" />
+        </div>
+      </section>
+    </main>
 
-      <div data-aos="fade-up-right">
-        <img src="/../assets/MH3U.jpg" height="500" width="400" />
-      </div>
-
-      <br />
-      <p class="texto_pre_img">
-        La Cuarta <sup>4ta</sup> generación, cuenta con <sub>2</sub> entregas
-      </p>
-
-      <div data-aos="fade-up-left">
-        <img src="/../assets/MH4U.jpg" height="500" width="400" />
-      </div>
-
-      <br />
-      <p class="texto_pre_img">
-        La quinta <sup>5ta</sup> generación, cuenta con <sub>2</sub> entregas
-      </p>
-
-      <div data-aos="fade-down-right">
-        <img src="/../assets/World.jpg" height="500" width="400" />
-      </div>
-
-      <br />
-      <p class="texto_pre_img">
-        La sexta <sup>6ta</sup> generación, cuenta con <sub>1</sub> entregas
-      </p>
-
-      <div data-aos="zoom-in-right">
-        <img src="/../assets/Wilds.jpg" height="500" width="400" />
-      </div>
-
-    </div>
-
-    <br /><br /><br /><br /><br /><br /><br /><br />
-
-    <a
-      href="https://monsterhunter.fandom.com/es/wiki/Saga_Monster_Hunter"
-      target="_blank"
-      class="link"
-      >Wiki de Monster Hunter</a
-    >
-
-    <br /><br /><br /><br /><br /><br /><br /><br />
-
-    <h3 class="texto_pre_img">
-      <strong><em> Galería de imágenes </em></strong>
-    </h3>
-
-    <section class="galeria">
-      <img src="/../assets/MH.jpg" />
-      <img src="/../assets/MH2.jpg" />
-      <img src="/../assets/Freedom.jpg" />
-      <img src="/../assets/Freedom 2.jpg" />
-      <img src="/../assets/Freedom unite.jpg" />
-      <img src="/../assets/MH3.jpg" />
-      <img src="/../assets/Portable 3 rd.jpg" />
-      <img src="/../assets/MH3U.jpg" />
-      <img src="/../assets/MH4U.jpg" />
-      <img src="/../assets/MHGU.jpg" />
-      <img src="/../assets/World.jpg" />
-      <img src="/../assets/Rise.jpg" />
-      <img src="/../assets/Wilds.jpg" />
-    </section>
+    <footer class="site-footer">
+      <p>Monster Hunter Info · Proyecto de fans · © 2026</p>
+      <nav class="footer-nav">
+        <a href="../index.html">Inicio</a>
+        <a href="Generaciones.html">Generaciones</a>
+        <a href="Insigneas.html">Insignias</a>
+      </nav>
+    </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <script>
-      AOS.init();
+      AOS.init({ once: true, duration: 800, offset: 80 });
     </script>
-
   </body>
 </html>
