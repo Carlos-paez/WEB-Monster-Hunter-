@@ -1,132 +1,225 @@
 <!doctype html>
-<html lang="es">
+
+<html lang="es" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <title>Monster Hunter Info</title>
-    <link href="styles/style.css" rel="stylesheet" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"> 
+    <title>Monster Hunter Info</title>
+    <link rel="icon" href="assets/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="/../styles/style.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
-  <body>
-    <audio src="assets/MHFU.mp3" autoplay></audio>
+  <body class="body" id="body">
+    <audio src="assets/MHFU.mp3" autoplay loop></audio>
 
-    <header class="baner">
-      <h1>
-        <strong><em> Monster Hunter Info </em></strong>
-      </h1>
+    <header class="site-header">
+      <a href="#inicio" class="brand">Monster&nbsp;<span>Hunter</span></a>
+      <nav class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="views/Generaciones.html">Generaciones</a>
+        <a href="views/Insigneas.html">Insignias</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
     </header>
 
-    <main class="all">
-      <h2 class="titulo">
-        <em><strong> Monster Hunter </strong></em>
-      </h2>
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero__content" data-aos="fade-up">
+          <p class="hero__kicker">Capcom · Desde 2004</p>
+          <h1 class="hero__title">Monster Hunter</h1>
+          <p class="hero__subtitle">
+            Caza monstruos gigantes, forja tu equipo y domina un mundo salvaje
+            que evoluciona contigo.
+          </p>
 
-      <button class="button" id="alerta">
-        <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
-        Explore
-      </button>
+          <!-- From Uiverse.io by vinodjangid07 -->
+          <button class="button" id="alerta">
+            <svg
+              class="svgIcon"
+              viewBox="0 0 512 512"
+              height="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
+              ></path>
+            </svg>
+            Explore
+          </button>
+        </div>
+      </section>
 
-      <p class="texto" id="text">
-        <strong>
-          Monster Hunter es una franquicia de videojuegos de rol y acción con
-          temática fantástica, desarrollada y publicada por Capcom. La serie
-          comenzó en 2004 con el lanzamiento del primer juego para PlayStation 2
-          y desde entonces ha sido adaptada a múltiples plataformas, incluyendo
-          PC, consolas y dispositivos móviles.
-        </strong>
-      </p>
+      <section class="section" id="sobre">
+        <h2 class="titulo" data-aos="fade-up">
+          <em><strong> Monster Hunter </strong></em>
+        </h2>
 
-      <div data-aos="fade-right">
-        <img src="assets/rathalos fondo.jpg" class="imagenes" />
-      </div>
+        <p class="texto" id="text" data-aos="fade-up">
+          <strong>
+            Monster Hunter es una franquicia de videojuegos de rol y acción con
+            temática fantástica, desarrollada y publicada por Capcom. La serie
+            comenzó en 2004 con el lanzamiento del primer juego para PlayStation
+            2 y desde entonces ha sido adaptada a múltiples plataformas,
+            incluyendo PC, consolas y dispositivos móviles.
+          </strong>
+        </p>
 
-      
+        <p class="texto" data-aos="fade-up">
+          En estos juegos, el jugador asume el papel de un cazador cuya misión
+          principal es cazar o capturar grandes monstruos en diversos entornos.
+          La jugabilidad se centra en completar misiones que implican enfrentar
+          estas criaturas, recolectar recursos y botines obtenidos de los
+          monstruos derrotados, y utilizarlos para fabricar armas, armaduras y
+          otros objetos que permiten enfrentar desafíos cada vez más difíciles.
+        </p>
 
-      <p class="texto">
-        En estos juegos, el jugador asume el papel de un cazador cuya misión
-        principal es cazar o capturar grandes monstruos en diversos entornos. La
-        jugabilidad se centra en completar misiones que implican enfrentar estas
-        criaturas, recolectar recursos y botines obtenidos de los monstruos
-        derrotados, y utilizarlos para fabricar armas, armaduras y otros objetos
-        que permiten enfrentar desafíos cada vez más difíciles.
-      </p>
+        <figure class="figure" data-aos="fade-up">
+          <img src="assets/mitsutsune.jpg" alt="Mizutsune" />
+        </figure>
 
-      <div data-aos="fade-up">
-        <img src="assets/mitsutsune.jpg" class="imagenes" />
-      </div>
+        <p class="texto" data-aos="fade-up">
+          El personaje no evoluciona con atributos propios; en cambio, sus
+          habilidades dependen del equipo que el jugador elige antes de cada
+          misión. Hay más de diez tipos de armas, cada una con estilos y
+          habilidades específicas, y la armadura proporciona defensa y
+          habilidades adicionales. El juego también incluye modos multijugador
+          cooperativos para hasta cuatro jugadores, lo que ha contribuido a su
+          popularidad, especialmente en Japón y Asia.
+        </p>
 
-      <p class="texto">
-        El personaje no evoluciona con atributos propios; en cambio, sus
-        habilidades dependen del equipo que el jugador elige antes de cada
-        misión. Hay más de diez tipos de armas, cada una con estilos y
-        habilidades específicas, y la armadura proporciona defensa y habilidades
-        adicionales. El juego también incluye modos multijugador cooperativos
-        para hasta cuatro jugadores, lo que ha contribuido a su popularidad,
-        especialmente en Japón y Asia.
-      </p>
+        <p class="texto" data-aos="fade-up">
+          Uno de los títulos más destacados de la serie es Monster Hunter: World
+          (2018), que introdujo un mundo abierto con ecosistemas vivos y
+          dinámicos, eliminando las pantallas de carga entre zonas y permitiendo
+          una experiencia más fluida. Este juego fue un éxito global,
+          convirtiéndose en el más vendido de la franquicia y de Capcom, con más
+          de 10 millones de copias vendidas en pocos meses.
+        </p>
 
-      <div data-aos="fade-down-left">
-        <img src="assets/duramboros wilds.jpg" class="imagenes" />
-      </div>
+        <figure class="figure" data-aos="fade-up">
+          <img src="assets/duramboros wilds.jpg" alt="Duramboros" />
+        </figure>
 
-      <p class="texto">
-        Uno de los títulos más destacados de la serie es Monster Hunter: World
-        (2018), que introdujo un mundo abierto con ecosistemas vivos y
-        dinámicos, eliminando las pantallas de carga entre zonas y permitiendo
-        una experiencia más fluida. Este juego fue un éxito global,
-        convirtiéndose en el más vendido de la franquicia y de Capcom, con más
-        de 10 millones de copias vendidas en pocos meses.
-      </p>
+        <p class="texto" data-aos="fade-up">
+          En resumen, Monster Hunter es una serie de videojuegos de rol y acción
+          donde el jugador caza monstruos gigantescos, recolecta recursos para
+          mejorar su equipo y enfrenta desafíos crecientes en un mundo de
+          fantasía viva y dinámica.
+        </p>
+      </section>
 
-      
+      <section class="section section--cards">
+        <h3 class="section-title" data-aos="fade-up">
+          <em><strong> Explora la saga </strong></em>
+        </h3>
+        <p class="texto" data-aos="fade-up">
+          Visita las siguientes páginas según la información que quieras
+          consultar.
+        </p>
 
-      <h3><strong><em>Visite las siguientes páginas para más información</em></strong></h3>
+        <div class="cards" data-aos="fade-up" data-aos-duration="1200">
+          <a
+            href="views/Generaciones.html"
+            target="_self"
+            class="card card--generations"
+            id="Generaciones"
+          >
+            <span class="card__label">Generaciones</span>
+            <span class="card__hint">Ver las generaciones del videojuego</span>
+          </a>
 
-      <div class="targetas" data-aos="fade-up" data-aos-duration="2000">
+          <a
+            href="views/Insigneas.html"
+            target="_self"
+            class="card card--insignias"
+            id="Insignias"
+          >
+            <span class="card__label">Monstruos Insignia</span>
+            <span class="card__hint">Conoce a los monstruos insignia</span>
+          </a>
+        </div>
+      </section>
 
-        <a href="views/Generaciones.html" class="targeta_generations">
-          <span>Generaciones</span>
-        </a>
-
-        <a href="views/Insigneas.html" class="targeta_Insignias">
-          <span>Monstruos insignia</span>
-        </a>
-        
-      </div>
-
-      <div data-aos="flip-right" style="margin-top: 40px;">
-        <p class="texto">
+      <section class="section" data-aos="fade-up">
+        <h4 class="texto">
           La saga de video juegos Monster Hunter, creada por Capcom en 2004, es
           una serie de rol de acción donde el jugador asume el rol de un cazador
-          para enfrentar y capturar monstruos gigantes en diversos entornos.
-        </p>
-      </div>
+          para enfrentar y capturar monstruos gigantes en diversos entornos. El
+          objetivo principal es completar misiones para obtener materiales de
+          los monstruos, que se usan para fabricar armas y armaduras más
+          poderosas, permitiendo al cazador enfrentar desafíos crecientes.
+          Aunque cuenta con un modo de un jugador, la serie es conocida por su
+          cooperativo, permitiendo hasta cuatro jugadores en misiones. A lo
+          largo de sus más de 25 juegos, la franquicia ha evolucionado en varias
+          plataformas, desde PlayStation 2 hasta PC y consolas modernas,
+          destacando Monster Hunter: World (2018) por su éxito global y
+          accesibilidad, convirtiéndose en el juego más vendido de Capcom y
+          expandiendo significativamente la base de fans fuera de Japón.
+        </h4>
+      </section>
 
-      <a class="btn_contacto" href="mailto:carlospaezguerra@gmail.com?subject=Monster Hunter fan">Contáctanos</a>
+      <section class="section section--cta" id="contacto" data-aos="fade-up">
+        <h3 class="section-title">¿Fan de Monster Hunter?</h3>
+        <p class="texto">Envíanos tus dudas, sugerencias o teorías de caza.</p>
+        <a
+          class="cta"
+          href="mailto:carlospaezguerra@gmail.com?subject=Monster Hunter fan&body=Hola, me gustaría obtener más información."
+          >Contáctanos</a
+        >
+      </section>
     </main>
 
-    <div id="cookieConsent">
-      <p>Usamos cookies para mejorar nuestra web. <a href="politica-cookies.html" style="color: #4dfeff;">Más info</a></p>
-      <button id="acceptCookies">Aceptar</button>
+    <footer class="site-footer">
+      <p>Monster Hunter Info · Proyecto de fans · © 2026</p>
+      <nav class="footer-nav">
+        <a href="#sobre">Sobre</a>
+        <a href="views/Generaciones.html">Generaciones</a>
+        <a href="views/Insigneas.html">Insignias</a>
+        <a href="politica-cookies.html">Política de cookies</a>
+      </nav>
+    </footer>
+
+    <div id="cookieConsent" class="cookie-consent">
+      <p>
+        Usamos cookies propias y de terceros para mejorar nuestros servicios.
+        <a href="politica-cookies.html">Más información</a>
+      </p>
+      <button id="acceptCookies" class="cookie-btn">Aceptar</button>
     </div>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="Scripts/Darck_Mode.js"></script>
     <script>
-      AOS.init();
       document.addEventListener("DOMContentLoaded", function () {
         const cookieConsent = document.getElementById("cookieConsent");
         const acceptBtn = document.getElementById("acceptCookies");
+
         if (localStorage.getItem("cookiesAccepted") === "true") {
           cookieConsent.style.display = "none";
         }
+
         acceptBtn.addEventListener("click", function () {
           localStorage.setItem("cookiesAccepted", "true");
           cookieConsent.style.display = "none";
         });
       });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="Scripts/JQuery.js"></script>
+    <script src="Scripts/Darck_Mode.js"></script>
+
+    <script>
+      AOS.init({ once: true, duration: 800, offset: 80 });
     </script>
   </body>
 </html>
